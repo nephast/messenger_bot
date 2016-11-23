@@ -25,11 +25,11 @@ app.post('/webhook/', function (req, res) {
       let sender = event.sender.id
       if (event.message && event.message.text) {
         let text = event.message.text
-        if (text === 'Generic') {
+        if (text === 'Stephan') {
             sendGenericMessage(sender)
             continue
         }
-        sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
+        sendTextMessage(sender, "Did you just say: " + text.substring(0, 200) + " ?")
       }
       if (event.postback) {
         let text = JSON.stringify(event.postback)
@@ -76,13 +76,13 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "First card",
-                    "subtitle": "Element #1 of an hscroll",
-                    "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+                    "title": "Stéphan",
+                    "subtitle": "Nice hair!",
+                    "image_url": "https://goo.gl/photos/HSVG2RHZJKxnHWPM9",
                     "buttons": [{
                         "type": "web_url",
-                        "url": "https://www.messenger.com",
-                        "title": "web url"
+                        "url": "https://goo.gl/photos/HSVG2RHZJKxnHWPM9",
+                        "title": "See original"
                     }, {
                         "type": "postback",
                         "title": "Postback",
