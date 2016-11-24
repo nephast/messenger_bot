@@ -6,7 +6,6 @@ const request = require('request')
 const app = express()
 const recipes = require("kraft-recipe-api")
 
-var resultat = 2 + 2
 
 app.set('port', (process.env.PORT || 5000))
 
@@ -93,7 +92,9 @@ function sendCatMessage(sender) {
                     }, {
                         "type": "postback",
                         "title": "Postback",
-                        "payload": resultat,
+                        "payload": recipes.searchByIngredients("beef", "chilli", "cheese", function(err, results) {
+  result;
+}),
                     }],
                 }, {
                     "title": "An other cat picture",
@@ -164,6 +165,21 @@ function sendDogMessage(sender) {
         }
     })
 }
+
+searchByIngredients: function(ingredient1, ingredient2, ingredient3, callback) {
+    var ingredients =  ["","",""];
+
+    if (ingredient1) {
+      ingredients[0] = ingredient1;
+    }
+
+    if (ingredient2) {
+      ingredients[1] = ingredient2;
+    }
+
+    if (ingredient3) {
+      ingredients[2] = ingredient3;
+    }
 
 // Spin up the server
 app.listen(app.get('port'), function() {
