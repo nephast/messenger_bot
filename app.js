@@ -6,6 +6,8 @@ const request = require('request')
 const app = express()
 const recipes = require("kraft-recipe-api")
 
+var resultat = 2 + 2
+
 app.set('port', (process.env.PORT || 5000))
 
 // Process application/x-www-form-urlencoded
@@ -91,7 +93,7 @@ function sendCatMessage(sender) {
                     }, {
                         "type": "postback",
                         "title": "Postback",
-                        "payload": "White cat",
+                        "payload": resultat,
                     }],
                 }, {
                     "title": "An other cat picture",
