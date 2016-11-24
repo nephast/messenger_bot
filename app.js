@@ -82,7 +82,7 @@ function sendStephanMessage(sender) {
                 "elements": [{
                     "title": "Stéphan",
                     "subtitle": "Nice hair!",
-                    "image_url": "https://lh3.googleusercontent.com/ui9s3vRcu-yw4G2BmW64C84NdtmEhSE9aAiLgopvZcq-WsjOdu8EySNxA5uJTPi2AeM9gZ9c1BYnYFWZld-onUSVPloPV5_7de6W6TAG1IydQotoU976irJporWp1-1nSkWkdK7yr8jz5gnKq5dPUeWUbGL0x5IGBOL_fRw7GiimhpbgX_pllUuy2KV1xpJLD02ZEKkacAPTJMPw4hMF0sdaiDF5GK-IZps4-vqTSQ-3Jq0wLjt-15ABNKA35OHtTK33TetUWLRVAh52nK4_zdzb9VnjusPHQEDISO49WZlSrI_lXw5oaFlnjrg3EyVj_B0lmLgnizjwn5IKrZKRNh-8GCsJRj16zW6EjzA4dZR6cxk3VMvl1rmEys7DgM9PsN3xWwJXk9DnXqQIBNB2TRsBnh7HglgJGMKkOzD1lAAofLsSjzv7gMMYStg98jiHNSHacrIDnN5GyjK1OIf8OLwdYDrx9Vmd8VmCc62OBAKIwNKH_mE21dZBmoIsWLAFUq4jvNV-ih_dGxfLdvjWx2XUp4EX38RJ13_qVt_bzhLxV6zl05xCIhCnYLhh2eFky5eGWBinD6GZfO4jrb-wFqkU9X4dOiTQio6KqE0XLmc=s680-no",
+                    "image_url": "http://i.imgur.com/Jvh1OQm.jpg",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://lh3.googleusercontent.com/ui9s3vRcu-yw4G2BmW64C84NdtmEhSE9aAiLgopvZcq-WsjOdu8EySNxA5uJTPi2AeM9gZ9c1BYnYFWZld-onUSVPloPV5_7de6W6TAG1IydQotoU976irJporWp1-1nSkWkdK7yr8jz5gnKq5dPUeWUbGL0x5IGBOL_fRw7GiimhpbgX_pllUuy2KV1xpJLD02ZEKkacAPTJMPw4hMF0sdaiDF5GK-IZps4-vqTSQ-3Jq0wLjt-15ABNKA35OHtTK33TetUWLRVAh52nK4_zdzb9VnjusPHQEDISO49WZlSrI_lXw5oaFlnjrg3EyVj_B0lmLgnizjwn5IKrZKRNh-8GCsJRj16zW6EjzA4dZR6cxk3VMvl1rmEys7DgM9PsN3xWwJXk9DnXqQIBNB2TRsBnh7HglgJGMKkOzD1lAAofLsSjzv7gMMYStg98jiHNSHacrIDnN5GyjK1OIf8OLwdYDrx9Vmd8VmCc62OBAKIwNKH_mE21dZBmoIsWLAFUq4jvNV-ih_dGxfLdvjWx2XUp4EX38RJ13_qVt_bzhLxV6zl05xCIhCnYLhh2eFky5eGWBinD6GZfO4jrb-wFqkU9X4dOiTQio6KqE0XLmc=s680-no",
