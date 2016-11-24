@@ -167,7 +167,7 @@ function sendDogMessage(sender) {
     })
 }
 
-searchByIngredients: function(ingredient1, ingredient2, ingredient3, callback) {
+function searchByIngredients(ingredient1, ingredient2, ingredient3, callback) {
     var ingredients =  ["","",""];
 
     if (ingredient1) {
