@@ -25,11 +25,11 @@ app.post('/webhook/', function (req, res) {
       let sender = event.sender.id
       if (event.message && event.message.text) {
         let text = event.message.text
-        if (text === 'cat') {
+        if (text === 'Cat') {
             sendCatMessage(sender)
             continue
         }
-        if (text === 'dog') {
+        if (text === 'Dog') {
             sendDogMessage(sender)
             continue
         }
