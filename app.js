@@ -4,6 +4,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
 const app = express()
+const recipes = require("kraft-recipe-api")
 
 app.set('port', (process.env.PORT || 5000))
 
@@ -25,7 +26,7 @@ app.post('/webhook/', function (req, res) {
       let sender = event.sender.id
       if (event.message && event.message.text) {
         let text = event.message.text
-        if (text === ':heart:') {
+        if (text === 'chicken') {
             sendCatMessage(sender)
             continue
         }
