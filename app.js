@@ -4,7 +4,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
 const app = express()
-const recipes = require("kraft-recipe-api")
+
+var recipes = require("kraft-recipe-api")
 
 var test = recipes.searchByIngredients("beef", "chilli", "cheese", function(err, results) {
   console.log(result);
