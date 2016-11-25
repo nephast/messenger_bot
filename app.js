@@ -5,12 +5,6 @@ const bodyParser = require('body-parser')
 const request = require('request')
 const app = express()
 
-var recipes = require("kraft-recipe-api")
-
-var test = recipes.searchByIngredients("beef", "chilli", "cheese", function(err, results) {
-  console.log(result);
-});
-
 app.set('port', (process.env.PORT || 5000))
 
 // Process application/x-www-form-urlencoded
@@ -21,7 +15,7 @@ app.use(bodyParser.json())
 
 // Index route
 app.get('/', function (req, res) {
-    res.send('Hello world, I am a chat bot')
+    res.send('Hello world, my name is Stéphan, I am a chat bot')
 })
 
 app.post('/webhook/', function (req, res) {
@@ -31,7 +25,7 @@ app.post('/webhook/', function (req, res) {
       let sender = event.sender.id
       if (event.message && event.message.text) {
         let text = event.message.text
-        if (text === 'chicken') {
+        if (text === 'Cat') {
             sendCatMessage(sender)
             continue
         }
@@ -39,7 +33,7 @@ app.post('/webhook/', function (req, res) {
             sendDogMessage(sender)
             continue
         }
-        sendTextMessage(sender, "Did you just say: " + text.substring(0, 200) + " ?")
+        sendTextMessage(sender, "hmmmm, did you just say: " + text.substring(0, 200) + " ?")
       }
       if (event.postback) {
         let text = JSON.stringify(event.postback)
@@ -96,7 +90,7 @@ function sendCatMessage(sender) {
                     }, {
                         "type": "postback",
                         "title": "Postback",
-                        "payload": test,
+                        "payload": "A cat picture, yeah...",
                     }],
                 }, {
                     "title": "An other cat picture",
@@ -167,21 +161,6 @@ function sendDogMessage(sender) {
         }
     })
 }
-
-function searchByIngredients(ingredient1, ingredient2, ingredient3, callback) {
-    var ingredients =  ["","",""];
-
-    if (ingredient1) {
-      ingredients[0] = ingredient1;
-    }
-
-    if (ingredient2) {
-      ingredients[1] = ingredient2;
-    }
-
-    if (ingredient3) {
-      ingredients[2] = ingredient3;
-    }
 
 // Spin up the server
 app.listen(app.get('port'), function() {
